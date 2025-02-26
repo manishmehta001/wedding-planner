@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+
+    <!-- Google Analytics Script (Asynchronous) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
+    ></script>
+    <script>
+      // Initialize Google Analytics and track pageviews
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      // Replace YOUR_TRACKING_ID with your Google Analytics tracking ID
+      gtag("config", "YOUR_TRACKING_ID");
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Facebook Pixel Code (To track page views and user interactions) -->
+    <noscript>
+      <!-- Facebook Pixel tracking when JavaScript is disabled -->
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+        alt=""
+      />
+    </noscript>
+
+    <!-- Your main React application entry point -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
